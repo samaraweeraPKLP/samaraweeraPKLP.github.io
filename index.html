@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Lakshan</title>
+   
+   <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+   <nav>
+      <img src="./Sub Logo.png" class="logo">
+      
+      <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#portfolio">Portfolio</a></li>
+         <li><a href="#social_media">Social media</a></li>
+         <li><a href="#contact">Contact</a></li>
+      </ul>
+   
+   </nav>
+   <section id="home">
+      <div class="main">
+         <h1 class="headings">I AM <BR> LAKSHAN PRADEEP</h1>
+            <a href="Lakshan.pdf" type="application/pdf">
+         <button class="btn">
+            Check my CV
+         </button></a>
+         </div>
+   </section>
+   <section id="about">
+         <h1 class="headings">ABOUT ME</h1>
+        <div class="pic">
+             <img  src="91e6f1266718813e10c8d829a682e3f4-removebg-preview.png" alt="back" class="shape">
+             <img  src="WhatsApp_Image_2022-09-17_at_12.52.45_PM-removebg-preview.png" alt="my image" class="mypic">
+         </div>
+         <div id="intro">
+            <h2>LAKSHAN PRADEEP</h2><br>
+            <p>I am Lakshan. I am in Kegalle. I studied G.C.E advanced level in commerce streem.
+               I studied in national school.I am currently pursuing a degree in Information Technology and Management at the Department of Information Technology, University of Moratuwa.
+                In addition, I will appear for the Chartered Accountant examinations of the Institute of Chartered Accountants of Sri Lanka.</p>
+         </div>
+      
+   </section>
+   <section id="skills">
+      <h1 class="headings">Essential IT Skills</h1>
+      <di<v class="myskills">
+         <table>
+            <tr>
+               <th>Security</th>
+               <td>
+                  <ul>
+                     <li>Familiarity with physical, network, and software security</li>
+                     <li>Installing firewalls and routers</li>
+                     <li>Data encryption</li>
+                     <li>Ethical hacking and penetration testing</li>
+                  </ul>
+               </td>
+            </tr>
+            
+            <tr>
+               <th rowspan="3">Programming</th>
+               <td>Python</td>
+             </tr>
+             <tr>
+               <td>C++</td>
+             </tr>
+             <tr>
+               <td>JavaScript</td>
+             </tr>
+
+             <tr>
+               <th>Systems and networks</th>
+               <td>
+                  <ul>
+                     <li>Administering diverse operating systems like Windows, Linux, or Mac</li>
+                     <li>Cloud administration and applications</li>
+                     <li>Troubleshooting</li>
+                     <li>Installing and configuring computer hardware and software</li>
+                  </ul>
+               </td>
+            </tr>
+
+             <tr>
+               <th rowspan="3">Data analysis</th>
+               <td>Python</td>
+             </tr>
+             <tr>
+               <td>SQL</td>
+             </tr>
+             <tr>
+               <td>Statistics</td>
+             </tr>
+
+         </table>
+      </div>
+   </section>
+   <section id="portfolio">
+      <h1 class="headings">PORTFOLIO</h1>
+      <div class="gallery">
+          <div class="action">
+              <img src="temple.jpg" alt="sri maha bodhiya">
+              <div class="overlay">sri maha bodhiya</div>
+          </div>
+          <div class="action">
+              <img src="sri-dalada-maligawa-temple-of-the-tooth-relic.jpg" alt="sri dalada maligawa">
+              <div class="overlay">sri dalada maligawa</div>
+          </div>
+          <div class="action">
+              <img src="adams-peak_srilanka.jpg" alt="sripadaya">
+              <div class="overlay">sripadaya</div>
+          </div>
+          <div class="action">
+              <img src="Beauty_of_Sigiriya_by_Binuka.jpg" alt="sigiriya">
+              <div class="overlay">sigiriya</div>
+          </div>
+          <div class="action">
+              <img src="z_jun-p02-The.jpg" alt="ruwanweliseya">
+              <div class="overlay">ruwanweliseya</div>
+          </div><div class="action">
+              <img src="image.jpg" alt="ambekke">
+              <div class="overlay">ambekke</div>
+          </div>
+      </div>
+      
+   </section>
+   <section id="social_media">
+      <h1 class="headings">Social media</h1>
+      <div class="row">
+         <div class="box">
+            <h1 class="headings">Facebook</h1>
+            <p>This is my Facebook account.</p>
+            <a href="https://www.facebook.com/">
+            <img src="./pngegg (1).png" class="socialpng"></a>
+         </div>
+         <div class="box">
+            <h1 class="headings">Youtube</h1>
+            <p>This is my Youtube account.</p>
+            <a href="https://www.youtube.com/">
+            <img src="./pngegg (3).png" class="socialpng"></a>
+
+         </div><div class="box">
+            <h1 class="headings">LinkedIn</h1>
+            <p>This is my LinkedIn account.</p>
+            <a href="https://www.linkedin.com/" >
+            <img src="./pngegg (2).png" class="socialpng"></a>
+
+         </div>
+      </div>
+   </section>
+
+   <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyB0bhtka2fny7vn11IalbILWkChvuxwjI4",
+        authDomain: "fir-activity-2a7e9.firebaseapp.com",
+        databaseURL: "https://fir-activity-2a7e9-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "fir-activity-2a7e9",
+        storageBucket: "fir-activity-2a7e9.appspot.com",
+        messagingSenderId: "717666237709",
+        appId: "1:717666237709:web:6cb4450695c63fad25c444"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+      document.getElementById("form").addEventListener("submit",function (e) {
+          e.preventDefault();
+          
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let textarea = document.getElementById("textarea").value;
+          
+          set(ref(db, 'users/' + name), {
+              username: name,
+              email: email,
+              textarea:textarea,
+             
+      });
+
+});
+    </script>
+    <section id="contact">
+      <h1 class="headings">CONTACT</h1>
+    <form action="" id="form">
+          <input type="text" id="name" placeholder="Enter Your Name"><br>
+          <input type="email" id="email" placeholder="Enter Your Email"><br>
+          <textarea cols="30" rows="15" placeholder="Enter Your Message" id="textarea"></textarea><br>
+          <input type="submit" value="SEND" class="btn"><br>
+          <input type="reset" value="CLEAN" class="btn">
+          
+   </form>
+  </section>
+</body>
+</html>
